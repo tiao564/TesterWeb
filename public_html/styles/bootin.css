@@ -1,0 +1,52 @@
+.dahck {
+	background: #666666;
+	color: white;
+}
+
+.dahckah {
+	background: #555555;
+	color: white;
+}
+
+.dahkest {
+	background: #444444;
+	color:white;
+}
+
+header ul {
+	padding: 0px;	
+	margin: 0px;
+}
+
+header ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px 10px;
+	border-radius:7px;
+}
+
+.myPanel {
+	margin: 3%;
+	border: 1px solid #000000;
+	border-radius: 5px 5px 3px 3px;
+	box-shadow: 1px 1px 10px #777777;
+}
+
+.myPanel .heading {
+	background: #23DD11;
+	color: #000000; 
+	padding 10px 20px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.myPanel .body {
+	padding: 10px 20px;
+}
+
+.myPanel .showOnHover {
+	display:none;
+}
+
+.myPanel:hover .showOnHover {
+	display:  inline-block;
+}
