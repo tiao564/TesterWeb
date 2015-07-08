@@ -5,3 +5,21 @@ img {
 .hide {
 	display:none;	
 }
+
+header ul {
+	background: #333333;
+	padding: 0px;
+	margin: 0px;
+}
+
+header ul li {
+	color: #CCCCCC;
+	display: inline-block;
+	list-style-type: none;
+	padding 0px 10px;
+	border-radius: 7px;
+}
+
+header ul li a {
+	color: #EEEEEE;
+}
