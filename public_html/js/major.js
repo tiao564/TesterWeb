@@ -5,11 +5,6 @@ var addSum = document.getElementById("add-sum");
 numOne.addEventListener("input", add);
 numTwo.addEventListener("input", add);
 
-function add() {
-	var one = parseFloat(numOne.value) || 0;
-	var two = parseFloat(numTwo.value) || 0;
-	addSum.innerHTML = "Your sum is: " + (one+two);
-}
 
 ///////////////////////////
 //bad code repeats itself//
@@ -60,20 +55,21 @@ function picLink(){
 	for(var i=0; i < allImages.length; i++){
 		allImages[i].className = "hide";
 	}
-	var picId = this.attributes["data-img"].vaule;
+	var picId = this.attributes["data-img"].value;
+	console.log(picId);
 	var pic = document.getElementById(picId);
 	if (pic.className === "hide"){
-		pic.className = "";
+		pic.className = "show";
 	}
 	else{
 		pic.className = "hide";
 	}
 }
 
-
-
-
-
-
+function add() {
+	var one = parseFloat(numOne.value) || 0;
+	var two = parseFloat(numTwo.value) || 0;
+	addSum.innerHTML = "Your sum is: " + (one+two);
+}
 
 

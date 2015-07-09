@@ -3,7 +3,7 @@ img {
 }
 
 .hide {
-	display:none;	
+	display:none;		
 }
 
 header ul {
@@ -26,4 +26,8 @@ header ul li a {
 
 .pictures {
 	list-style-type: none;
+}
+
+.show {
+	width:200px;
 }

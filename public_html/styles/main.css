@@ -17,4 +17,10 @@ p{
         background: red;
         color:      white;
         }
-~            
+.hide {
+	display:none; 
+}            
+
+img {
+	width:200px;
+}
