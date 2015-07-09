@@ -51,19 +51,32 @@ ben.addEventListener("click", picLink);
 
 function picLink(){
 	var allImages = document.querySelectorAll("img");
-
-	for(var i=0; i < allImages.length; i++){
-		allImages[i].className = "hide";
-	}
 	var picId = this.attributes["data-img"].value;
 	console.log(picId);
 	var pic = document.getElementById(picId);
-	if (pic.className === "hide"){
-		pic.className = "show";
+
+	for(var i=0; i < allImages.length; i++){
+	if(allImages[i] === pic && pic.className === "hide"){
+			pic.className = "show";
+		}
+		else{
+			allImages[i].className = "hide";	
+		}	
 	}
-	else{
-		pic.className = "hide";
-	}
+
+
+ //	for(var i=0; i < allImages.length; i++){
+ //		allImages[i].className = "hide";
+ //	}
+ //	if (pic.className === "hide"){
+ //		pic.className = "show";
+ //	}
+ //	else{
+ //		pic.className = "hide";
+ //	}
+
+
+
 }
 
 function add() {
